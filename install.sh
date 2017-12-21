@@ -35,6 +35,7 @@ sudo make samples
 sudo make config
 
 ## Configuring asterisk
+cd ..
 sudo cp conf-asterisk/* /etc/asterisk/
 sudo sed -i "s/xx.xx.xx.xx/$1/g" /etc/asterisk/rtp.conf
 sudo sed -i "s/xx.xx.xx.xx/$1/g" /etc/asterisk/sip.conf
@@ -42,7 +43,7 @@ sudo sed -i "s/xx.xx.xx.xx/$1/g" /etc/asterisk/sip.conf
 ## Configuring Kurento
 sudo cp conf-kurento/kurento.conf.json /etc/kurento/
 sudo cp conf-kurento/WebRtcEndpoint.conf.ini /etc/kurento/modules/kurento/
-sudo sed -i "s/xx.xx.xx.xx/$1/g" /etc/kurento/modules/WebRtcEndpoint.conf.ini
+sudo sed -i "s/xx.xx.xx.xx/$1/g" /etc/kurento/modules/kurento/WebRtcEndpoint.conf.ini
 
 ## Generating keys
 mkdir /home/ubuntu/nssl/
