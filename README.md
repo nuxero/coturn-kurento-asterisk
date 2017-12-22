@@ -8,6 +8,7 @@ The final result features an standard STUN/TURN server, Kurento listening on 811
 
 Clone this repo on a server running Ubuntu 16.04 and run the script as follows, replacing `1.2.3.4` with your actual ip address or server domain name:
 
+    cd coturn-kurento-asterisk
     chmod +x install.sh
     ./install.sh 1.2.3.4
 
